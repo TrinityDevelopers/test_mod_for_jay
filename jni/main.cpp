@@ -2,7 +2,6 @@
 #include <dlfcn.h>
 #include <android/log.h>
 #include <stdlib.h>
-#include <mcpe.h>
 #include <Substrate.h>
 
 #define LOG_TAG "addon"
