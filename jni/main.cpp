@@ -14,9 +14,9 @@ class ItemInstance;
 class TilePos;
 class Vec3;
 
-void GameMode$useItemOn_real(Player &, ItemInstance*, TilePos const&, signed char, Vec3 const&);
+static void (*GameMode$useItemOn_real)(Player&, ItemInstance*, TilePos const&, signed char, Vec3 const&);
 
-void GameMode$useItemOn_hook(Player& player, ItemInstance* item, TilePos const& tilepos, signed char sc, Vec3 const& vec3) {
+static void GameMode$useItemOn_hook(Player& player, ItemInstance* item, TilePos const& tilepos, signed char sc, Vec3 const& vec3) {
 	GameMode$useItemOn_real(player, item, tilepos, sc, vec3);
 }
 
