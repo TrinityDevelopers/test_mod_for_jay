@@ -3,6 +3,7 @@
 #include <android/log.h>
 #include <stdlib.h>
 #include <Substrate.h>
+#include <string>
 
 #define LOG_TAG "addon"
 
