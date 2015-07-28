@@ -22,7 +22,7 @@ static bool GameMode$useItemOn_hook(Player& player, ItemInstance* item, TilePos 
 
 
 JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void* reserved) {
-	LOGI("We will make the coolest mod ever!:-)!");
+	LOGI("We will make the coolest mod ever! :-)!");
 
 	void* useItemOn = dlsym(RTLD_DEFAULT, "_ZN8GameMode9useItemOnER6PlayerP12ItemInstanceRK7TilePosaRK4Vec3");	
 	MSHookFunction(useItemOn, (void*) &GameMode$useItemOn_hook, (void**) &GameMode$useItemOn_real);	
